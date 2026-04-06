@@ -1,0 +1,729 @@
+/**
+ * SmartDoc to Post Importer - Admin Styles
+ *
+ * @package SmartDocToPostImporter
+ */
+
+/* Main container */
+.smartdocpost-admin-container {
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.smartdocpost-upload-section {
+    flex: 2;
+}
+
+.smartdocpost-upload-section h2 {
+    margin-top: 0;
+}
+
+.smartdocpost-features {
+    flex: 1;
+}
+
+/* File upload styling */
+.smartdocpost-upload-form {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.smartdocpost-upload-form.smartdocpost-loading {
+    opacity: 0.7;
+    pointer-events: none;
+}
+
+.smartdocpost-upload-form input[type="file"] {
+    width: 100%;
+    padding: 8px;
+    border: 2px dashed #ccd0d4;
+    border-radius: 4px;
+    background: #fafafa;
+    transition: border-color 0.3s ease;
+    margin-bottom: 10px;
+}
+
+.smartdocpost-upload-form input[type="file"]:hover {
+    border-color: #0073aa;
+}
+
+.smartdocpost-upload-form input[type="file"]:focus {
+    border-color: #0073aa;
+    outline: none;
+    box-shadow: 0 0 0 1px #0073aa;
+}
+
+.smartdocpost-drag-over {
+    background-color: #e8f4fd !important;
+    border-color: #0073aa !important;
+}
+
+/* File validation styling */
+.smartdocpost-file-info {
+    background: #d4edda;
+    border: 1px solid #c3e6cb;
+    color: #155724;
+    padding: 10px;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.smartdocpost-invalid {
+    border-color: #dc3545 !important;
+    box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25) !important;
+}
+
+.smartdocpost-validation-message {
+    color: #dc3545;
+    font-size: 12px;
+    margin-top: 5px;
+    display: block;
+}
+
+/* Features list */
+.smartdocpost-features h3 {
+    margin-top: 0;
+    color: #23282d;
+    font-size: 16px;
+}
+
+.smartdocpost-features ul {
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+    background: #f8f9fa;
+    border: 1px solid #e1e5e9;
+}
+
+.smartdocpost-features li {
+    padding: 8px 25px;
+    border-bottom: 1px solid #e1e5e9;
+    color: #555;
+    font-size: 14px;
+}
+
+.smartdocpost-features li:last-child {
+    border-bottom: none;
+}
+
+.smartdocpost-features li:before {
+    content: "✓";
+    color: #46b450;
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+/* Preview container */
+.smartdocpost-preview-container {
+    margin-top: 30px;
+    background: #fff;
+    border: 1px solid #ccd0d4;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.smartdocpost-preview-container h2 {
+    margin: 0;
+    padding: 15px 20px;
+    background: #f1f1f1;
+    border-bottom: 1px solid #ccd0d4;
+    font-size: 18px;
+    color: #23282d;
+}
+
+/* Preview content */
+.smartdocpost-preview-content {
+    padding: 20px;
+    overflow-y: auto;
+    border-bottom: 1px solid #e1e5e9;
+    background: #fafafa;
+}
+
+.smartdocpost-preview-content h1,
+.smartdocpost-preview-content h2,
+.smartdocpost-preview-content h3,
+.smartdocpost-preview-content h4,
+.smartdocpost-preview-content h5,
+.smartdocpost-preview-content h6 {
+    color: #23282d;
+    margin-top: 0;
+}
+
+.smartdocpost-preview-content p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.smartdocpost-preview-content ul,
+.smartdocpost-preview-content ol {
+    margin-bottom: 15px;
+    padding-left: 30px;
+}
+
+.smartdocpost-preview-content li {
+    margin-bottom: 5px;
+}
+
+.smartdocpost-preview-content img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin: 10px 0;
+}
+
+.smartdocpost-preview-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0;
+}
+
+.smartdocpost-preview-content th,
+.smartdocpost-preview-content td {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.smartdocpost-preview-content th {
+    background: #f1f1f1;
+    font-weight: bold;
+}
+
+/* Import form */
+.smartdocpost-import-form {
+    padding: 20px;
+    background: #fff;
+}
+
+.smartdocpost-import-form h3 {
+    margin-top: 0;
+    color: #23282d;
+    font-size: 16px;
+}
+
+.smartdocpost-import-form .form-table {
+    margin-top: 15px;
+}
+
+.smartdocpost-import-form .form-table th {
+    width: 150px;
+    font-weight: 600;
+}
+
+.smartdocpost-import-form .regular-text,
+.smartdocpost-import-form .large-text {
+    width: 100%;
+    max-width: 400px;
+}
+
+.smartdocpost-import-form select {
+    min-width: 200px;
+}
+
+.smartdocpost-import-form input[type="text"],
+.smartdocpost-import-form input[type="datetime-local"],
+.smartdocpost-import-form textarea,
+.smartdocpost-import-form select {
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Taxonomy fields styling */
+#taxonomy_container {
+    max-width: 500px;
+}
+
+.taxonomy-field {
+    margin-bottom: 15px;
+    padding: 10px;
+    background: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 4px;
+}
+
+.taxonomy-field label {
+    font-weight: 600;
+    margin-bottom: 5px;
+    display: block;
+    color: #495057;
+}
+
+.taxonomy-field select {
+    width: 100%;
+    min-height: 80px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+.taxonomy-field .description {
+    font-size: 12px;
+    color: #6c757d;
+    margin-top: 5px;
+    font-style: italic;
+}
+
+
+
+/* Date field styling */
+#post_date {
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    padding: 8px;
+}
+
+#post_date:focus {
+    border-color: #0073aa;
+    box-shadow: 0 0 0 0.2rem rgba(0, 115, 170, 0.25);
+    outline: none;
+}
+
+/* Success info styling */
+.smartdocpost-success-info {
+    background: #d1edff;
+    border: 1px solid #0073aa;
+    border-radius: 4px;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.smartdocpost-success-info h4 {
+    margin: 0 0 10px 0;
+    color: #0073aa;
+}
+
+.smartdocpost-success-info ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.smartdocpost-success-info li {
+    margin-bottom: 5px;
+    color: #0073aa;
+}
+
+/* Preview section styling */
+.smartdocpost-preview-section {
+    margin-top: 30px;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.smartdocpost-preview-content {
+    margin-bottom: 30px;
+}
+
+.smartdocpost-content-preview {
+    max-height: 500px;
+    overflow-y: auto;
+    border: 1px solid #e1e1e1;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 8px;
+    margin-top: 15px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    line-height: 1.8;
+    color: #333333;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+  
+  /* Headings */
+  .smartdocpost-content-preview h1,
+.smartdocpost-content-preview h2,
+.smartdocpost-content-preview h3,
+.smartdocpost-content-preview h4,
+.smartdocpost-content-preview h5,
+.smartdocpost-content-preview h6 {
+    font-family: 'Arial Black', Arial, sans-serif;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    color: #111;
+    line-height: 1.25;
+  }
+  
+  .smartdocpost-content-preview h1 { font-size: 2.8rem; border-bottom: 2px solid #eee; padding-bottom: 0.3rem; }
+.smartdocpost-content-preview h2 { font-size: 2.2rem; }
+.smartdocpost-content-preview h3 { font-size: 1.8rem; }
+.smartdocpost-content-preview h4 { font-size: 1.4rem; }
+.smartdocpost-content-preview h5 { font-size: 1.2rem; }
+.smartdocpost-content-preview h6 { font-size: 1rem; color: #555; }
+  
+  /* Paragraphs */
+  .smartdocpost-content-preview p {
+    margin: 1rem 0;
+    font-size: 1.1rem;
+    color: #333;
+  }
+  
+  /* Links */
+  .smartdocpost-content-preview a {
+    color: #0073e6;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+  }
+  
+  .smartdocpost-content-preview a:hover,
+.smartdocpost-content-preview a:focus {
+    color: #005bb5;
+    text-decoration: none;
+  }
+  
+  /* Images */
+  .smartdocpost-content-preview img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1.5rem auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
+  }
+  
+  /* Blockquotes */
+  .smartdocpost-content-preview blockquote {
+    border-left: 4px solid #0073e6;
+    margin: 1.5rem 0;
+    padding-left: 1rem;
+    color: #555;
+    font-style: italic;
+    background: #f9faff;
+    border-radius: 3px;
+  }
+  
+  /* Lists */
+  .smartdocpost-content-preview ul,
+.smartdocpost-content-preview ol {
+    margin: 1rem 0 1rem 1.5rem;
+    padding-left: 0;
+    color: #444;
+  }
+  
+  .smartdocpost-content-preview ul li {
+    list-style-type: disc;
+    margin-bottom: 0.5rem;
+  }
+  
+  .smartdocpost-content-preview ol li {
+    list-style-type: decimal;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Nested lists */
+  .smartdocpost-content-preview ul ul,
+.smartdocpost-content-preview ol ol,
+.smartdocpost-content-preview ul ol,
+.smartdocpost-content-preview ol ul {
+    margin-left: 1.5rem;
+    margin-top: 0.5rem;
+  }
+  
+  /* Code blocks */
+  .smartdocpost-content-preview pre {
+    background: #2d2d2d;
+    color: #f8f8f2;
+    padding: 1rem;
+    overflow-x: auto;
+    border-radius: 5px;
+    margin: 1.5rem 0;
+    font-family: 'Source Code Pro', monospace, monospace;
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+  
+  .smartdocpost-content-preview code {
+    background: #f5f5f5;
+    padding: 0.2rem 0.4rem;
+    border-radius: 3px;
+    font-family: 'Source Code Pro', monospace, monospace;
+    font-size: 0.95rem;
+    color: #c7254e;
+  }
+  
+  /* Tables */
+  .smartdocpost-content-preview table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+    font-size: 1rem;
+  }
+  
+  .smartdocpost-content-preview th,
+.smartdocpost-content-preview td {
+    border: 1px solid #ddd;
+    padding: 0.75rem 1rem;
+    text-align: left;
+  }
+  
+  .smartdocpost-content-preview th {
+    background-color: #f3f6fc;
+    font-weight: 600;
+    color: #222;
+  }
+  
+  /* Horizontal rule */
+  .smartdocpost-content-preview hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 2rem 0;
+  }
+  
+  /* Responsive embeds (like videos) */
+  .smartdocpost-content-preview iframe,
+.smartdocpost-content-preview video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1.5rem auto;
+  }
+  
+  /* Strong and emphasis */
+  .smartdocpost-content-preview strong {
+    font-weight: 700;
+    color: #111;
+  }
+  
+  .smartdocpost-content-preview em {
+    font-style: italic;
+    color: #555;
+  }
+  
+ 
+  
+  /* Responsive typography scaling on smaller screens */
+  @media (max-width: 768px) {
+    .smartdocpost-content-preview {
+      padding: 0 0.75rem;
+      font-size: 1rem;
+    }
+  
+    .smartdocpost-content-preview h1 { font-size: 2rem; }
+    .smartdocpost-content-preview h2 { font-size: 1.6rem; }
+    .smartdocpost-content-preview h3 { font-size: 1.3rem; }
+  }
+  
+
+
+/* Text alignment classes for content from Word documents */
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.smartdocpost-import-form-container {
+    background: #f1f1f1;
+    padding: 20px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.smartdocpost-import-form-container h3 {
+    margin-top: 0;
+    color: #23282d;
+}
+
+/* AJAX loading states */
+.smartdocpost-loading {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.smartdocpost-loading::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    margin: -10px 0 0 -10px;
+    border: 2px solid #f3f3f3;
+    border-top: 2px solid #0073aa;
+    border-radius: 50%;
+    animation: smartdocpost-spin 1s linear infinite;
+}
+
+@keyframes smartdocpost-spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Hide preview section initially */
+.smartdocpost-preview-section {
+    display: none;
+}
+
+.smartdocpost-preview-section.show {
+    display: block;
+    animation: smartdocpost-fadeIn 0.3s ease-in;
+}
+
+@keyframes smartdocpost-fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Loading states */
+.smartdocpost-loading {
+    position: relative;
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.smartdocpost-loading:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    margin: -10px 0 0 -10px;
+    border: 2px solid #f3f3f3;
+    border-top: 2px solid #0073aa;
+    border-radius: 50%;
+    animation: smartdocpost-spin 1s linear infinite;
+}
+
+@keyframes smartdocpost-spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Progress bar */
+.smartdocpost-progress {
+    width: 100%;
+    height: 20px;
+    background: #f1f1f1;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 15px 0;
+}
+
+.smartdocpost-progress-bar {
+    height: 100%;
+    background: linear-gradient(90deg, #0073aa, #00a0d2);
+    border-radius: 10px;
+    transition: width 0.3s ease;
+    position: relative;
+}
+
+.smartdocpost-progress-bar:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.3),
+        transparent
+    );
+    animation: smartdocpost-progress-shine 2s infinite;
+}
+
+@keyframes smartdocpost-progress-shine {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+}
+
+/* Notices */
+.smartdocpost-notice {
+    margin: 15px 0;
+    padding: 12px;
+    border-left: 4px solid #0073aa;
+    background: #fff;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+}
+
+.smartdocpost-notice.notice-success {
+    border-left-color: #46b450;
+}
+
+.smartdocpost-notice.notice-warning {
+    border-left-color: #ffb900;
+}
+
+.smartdocpost-notice.notice-error {
+    border-left-color: #dc3232;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .smartdocpost-admin-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .smartdocpost-success-info ul {
+        grid-template-columns: 1fr;
+    }
+    
+    .smartdocpost-import-form .regular-text,
+    .smartdocpost-import-form .large-text {
+        max-width: 100%;
+    }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+    .smartdocpost-upload-section,
+    .smartdocpost-import-form {
+        background: #1e1e1e;
+        border-color: #3c434a;
+        color: #e0e0e0;
+    }
+    
+    .smartdocpost-features {
+        background: #2c2c2c;
+        border-color: #3c434a;
+        color: #e0e0e0;
+    }
+    
+    .smartdocpost-preview-content {
+        background: #2c2c2c;
+        color: #e0e0e0;
+    }
+    
+    .smartdocpost-success-info {
+        background: #1a3d1a;
+        color: #90ee90;
+    }
+}
+
+/* Accessibility improvements */
+.smartdocpost-upload-form input[type="file"]:focus,
+.smartdocpost-import-form input:focus,
+.smartdocpost-import-form select:focus,
+.smartdocpost-import-form textarea:focus {
+    outline: 2px solid #0073aa;
+    outline-offset: 2px;
+}
+
+/* High contrast mode */
+@media (prefers-contrast: high) {
+    .smartdocpost-upload-section,
+    .smartdocpost-features,
+    .smartdocpost-import-form {
+        border-width: 2px;
+    }
+    
+    .smartdocpost-upload-form input[type="file"] {
+        border-width: 3px;
+    }
+}
