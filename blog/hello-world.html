@@ -3,11 +3,18 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>About — jarv1sX</title>
+<title>Hello world! — jarv1sX</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/style.css">
+<style>
+  .article-body { font-size: 1.02rem; line-height: 1.85; color: #222; }
+  .article-body p { margin: 0.9em 0; }
+  .post-header { margin-bottom: 2rem; }
+  .post-header .page-title { margin-bottom: 0.5rem; }
+  .post-metabar { display: flex; gap: 1rem; align-items: center; flex-wrap: wrap; margin-top: 0.75rem; font-size: 0.85rem; color: #686868; }
+</style>
 </head>
 <body>
 
@@ -18,20 +25,25 @@
       <a href="../">Home</a>
       <a href="../article/">Articles</a>
       <a href="../blog/">Blog</a>
-      <a href="../about-me/" class="active">About</a>
+      <a href="../about-me/">About</a>
     </nav>
   </div>
 </header>
 
 <main class="site-main">
-  <div class="container" style="text-align:center">
+  <div class="container">
 
-    <h1 class="page-title" style="text-align:center">About me</h1>
+    <div class="post-header">
+      <h1 class="page-title">Hello world!</h1>
+      <div class="post-metabar">
+        <span class="post-card-category"><a href="#">Uncategorized</a></span>
+        <span>2026.03.13</span>
+        <span>71 characters</span>
+      </div>
+    </div>
 
-    <div style="max-width:540px;margin:0 auto">
-      <p>I am a current graduate student majoring in Artificial Intelligence.</p>
-
-      <p>The reason I named myself &ldquo;jarv1sX&rdquo; is that &ldquo;Jarvis&rdquo; from Iron Man is related to artificial intelligence. As for the suffix &ldquo;X&rdquo;, it's because the name was already taken. But more than that, I hope that one day AI can become even more powerful than Jarvis.</p>
+    <div class="article-body">
+      <p>Welcome to WordPress. This is your first post. Edit or delete it, then start writing!</p>
     </div>
 
   </div>

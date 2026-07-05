@@ -1,0 +1,469 @@
+/* === Design System: Academic Personal Homepage ===
+   Based on Twenty Twenty-Five theme palette and typography.
+   Fonts: Manrope (body), Fira Code (mono)
+   Palette: Base #FFFFFF, Contrast #111111, Accent #FFEE58,
+            Pink #F6CFF4, Purple #503AA8, Muted #686868, Warm #FBFAF3
+*/
+
+/* --- Reset & Base --- */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: "Manrope", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #111111;
+  background: #FFFFFF;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a { color: #503AA8; text-decoration-thickness: 1px; text-underline-offset: .15em; }
+a:hover { color: #111111; }
+
+h1, h2, h3, h4 { font-weight: 600; line-height: 1.25; letter-spacing: -0.01em; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.4rem; }
+h3 { font-size: 1.1rem; }
+
+p + p { margin-top: 0.8em; }
+
+hr {
+  border: none;
+  border-top: 1px solid rgba(0,0,0,0.1);
+  margin: 2rem 0;
+}
+
+/* --- Layout --- */
+.container {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* --- Header --- */
+.site-header {
+  padding: 1.5rem 0;
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+}
+
+.site-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.site-title {
+  font-family: "Fira Code", "SF Mono", "Consolas", monospace;
+  font-size: 1.15rem;
+  font-weight: 500;
+}
+
+.site-title a {
+  color: #111111;
+  text-decoration: none;
+}
+
+.site-title a:hover { color: #503AA8; }
+
+/* --- Navigation --- */
+.site-nav { display: flex; gap: 0.25rem; align-items: center; }
+
+.site-nav a {
+  display: inline-block;
+  padding: 0.35rem 0.75rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #686868;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: color 0.15s, background 0.15s;
+}
+
+.site-nav a:hover,
+.site-nav a.active {
+  color: #111111;
+  background: #FBFAF3;
+}
+
+/* --- Main Content --- */
+.site-main { min-height: 60vh; padding: 3rem 0; }
+
+.page-title {
+  font-family: "Fira Code", "SF Mono", "Consolas", monospace;
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 2.5rem;
+  color: #111111;
+}
+
+/* --- Sections (Homepage) --- */
+.section { margin-bottom: 3rem; }
+
+.section-label {
+  font-family: "Fira Code", "SF Mono", "Consolas", monospace;
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #503AA8;
+  margin-bottom: 0.75rem;
+}
+
+.section-heading { margin-bottom: 0.75rem; }
+
+.section p { color: #333; font-size: 1rem; }
+
+/* --- Hero / Intro --- */
+.hero-intro { margin-bottom: 3rem; }
+
+.hero-intro h1 {
+  font-family: "Fira Code", "SF Mono", "Consolas", monospace;
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.hero-intro .subtitle {
+  color: #686868;
+  font-size: 1rem;
+}
+
+/* --- Links Row --- */
+.links-row {
+  display: flex;
+  gap: 1.25rem;
+  margin: 1.5rem 0;
+  flex-wrap: wrap;
+}
+
+.links-row a {
+  color: #503AA8;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+/* --- Publication list --- */
+.pub-list { list-style: none; }
+
+.pub-list li {
+  padding: 1rem 0;
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+}
+
+.pub-list li:last-child { border-bottom: none; }
+
+.pub-title { font-weight: 600; }
+.pub-title a { color: #111111; text-decoration: none; }
+.pub-title a:hover { color: #503AA8; }
+
+.pub-meta {
+  font-size: 0.85rem;
+  color: #686868;
+  margin-top: 0.25rem;
+}
+
+.pub-venue { color: #503AA8; font-weight: 500; }
+
+/* --- Post / Article Card --- */
+.post-card {
+  padding: 1.75rem 0;
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+}
+
+.post-card:first-child { padding-top: 0; }
+.post-card:last-child { border-bottom: none; }
+
+.post-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 0.4rem;
+}
+
+.post-card-title {
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+
+.post-card-title a {
+  color: #111111;
+  text-decoration: none;
+}
+
+.post-card-title a:hover { color: #503AA8; }
+
+.post-card-date {
+  font-size: 0.82rem;
+  color: #686868;
+  white-space: nowrap;
+}
+
+.post-card-meta {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  font-size: 0.8rem;
+  color: #686868;
+  margin-bottom: 0.5rem;
+}
+
+.post-card-category a {
+  display: inline-block;
+  padding: 0.15rem 0.6rem;
+  background: #FBFAF3;
+  color: #503AA8;
+  font-size: 0.78rem;
+  font-weight: 500;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.post-card-category a:hover { background: #503AA8; color: #FFFFFF; }
+
+.post-card-excerpt {
+  font-size: 0.93rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+.post-card-readmore {
+  display: inline-block;
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #503AA8;
+  text-decoration: none;
+}
+
+.post-card-readmore:hover { color: #111111; }
+
+/* --- Empty State --- */
+.empty-state {
+  text-align: center;
+  padding: 4rem 1rem;
+}
+
+.empty-state-icon {
+  font-size: 3rem;
+  margin-bottom: 1.25rem;
+  opacity: 0.35;
+  user-select: none;
+}
+
+.empty-state h2 {
+  font-family: "Fira Code", "SF Mono", "Consolas", monospace;
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-bottom: 0.75rem;
+  color: #111111;
+}
+
+.empty-state p {
+  color: #686868;
+  max-width: 380px;
+  margin: 0 auto;
+  font-size: 0.93rem;
+  line-height: 1.7;
+}
+
+/* --- Quote --- */
+blockquote {
+  border-left: 3px solid #FFEE58;
+  padding: 0.75rem 1.25rem;
+  margin: 1.5rem 0;
+  background: #FBFAF3;
+  color: #555;
+  font-style: italic;
+}
+
+/* --- Footer --- */
+.site-footer {
+  border-top: 1px solid rgba(0,0,0,0.08);
+  padding: 2rem 0;
+}
+
+.site-footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.footer-copy {
+  font-family: "Fira Code", "SF Mono", "Consolas", monospace;
+  font-size: 0.8rem;
+  color: #686868;
+}
+
+.footer-credit {
+  font-size: 0.78rem;
+  color: #999;
+}
+
+/* --- Responsive --- */
+@media (max-width: 600px) {
+  .container { padding: 0 1rem; }
+
+  .site-header .container { flex-direction: column; align-items: flex-start; }
+
+  .site-nav { flex-wrap: wrap; }
+  .site-nav a { padding: 0.3rem 0.6rem; font-size: 0.85rem; }
+
+  .page-title { font-size: 1.4rem; }
+
+  .hero-intro h1 { font-size: 1.6rem; }
+
+  .post-card-header { flex-direction: column; }
+
+  .site-footer .container { flex-direction: column; align-items: flex-start; }
+}
+
+/* --- Accessibility --- */
+:focus-visible {
+  outline: 2px solid #503AA8;
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+}
+
+
+/* --- Table of Contents Sidebar --- */
+.toc-root {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 90;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-start;
+  pointer-events: none;
+}
+.toc-root * { pointer-events: auto; }
+
+.toc-trigger {
+  width: 22px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #7B2D8E;
+  border-radius: 11px 0 0 11px;
+  cursor: pointer;
+  transition: width 0.25s ease, background 0.25s ease;
+  flex-shrink: 0;
+}
+.toc-trigger::after {
+  content: "\2261";
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1;
+  transition: opacity 0.25s ease;
+}
+.toc-trigger:hover { background: #5e1e6e; }
+.toc-root.pinned .toc-trigger { opacity: 0; visibility: hidden; pointer-events: none; width: 0; transition: opacity 0.25s ease, visibility 0s 0.25s, width 0.25s ease; }
+
+.toc-panel {
+  width: 230px;
+  max-height: 62vh;
+  background: rgba(255,255,255,0.97);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(0,0,0,0.07);
+  border-radius: 10px 0 0 10px;
+  box-shadow: -2px 4px 28px rgba(0,0,0,0.07);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(8px);
+  transition: opacity 0.3s cubic-bezier(0.4,0,0.2,1),
+              transform 0.3s cubic-bezier(0.4,0,0.2,1),
+              visibility 0s 0.3s;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.toc-root:hover .toc-panel,
+.toc-root.pinned .toc-panel {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+  transition: opacity 0.3s cubic-bezier(0.4,0,0.2,1),
+              transform 0.3s cubic-bezier(0.4,0,0.2,1),
+              visibility 0s 0s;
+}
+
+.toc-panel-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 16px 10px;
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+}
+.toc-panel-title {
+  font-family: "Fira Code","SF Mono","Consolas",monospace;
+  font-size: 0.78rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #7B2D8E;
+}
+.toc-pin-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  border: none;
+  border-radius: 5px;
+  background: transparent;
+  cursor: pointer;
+  color: #7B2D8E;
+  font-size: 13px;
+  transition: color 0.2s, background 0.2s;
+}
+.toc-pin-btn:hover { color: #7B2D8E; background: #FBFAF3; }
+.toc-root.pinned .toc-pin-btn { color: #7B2D8E; background: rgba(123,45,142,0.08); }
+
+.toc-list { list-style: none; padding: 8px 0; }
+
+.toc-item {
+  display: block;
+  font-size: 0.82rem;
+  line-height: 1.4;
+  color: #686868;
+  text-decoration: none;
+  padding: 5px 16px 5px 16px;
+  border-left: 2px solid transparent;
+  transition: color 0.2s, background 0.2s, border-color 0.2s, padding-left 0.2s;
+  cursor: pointer;
+}
+.toc-item:hover {
+  color: #111;
+  background: #FBFAF3;
+  border-left-color: #7B2D8E;
+  padding-left: 20px;
+}
+.toc-item.active {
+  color: #111;
+  border-left-color: #FFEE58;
+  background: rgba(255,238,88,0.08);
+  font-weight: 500;
+}
+.toc-item.level-h2 { padding-left: 30px; font-size: 0.8rem; }
+.toc-item.level-h3 { padding-left: 44px; font-size: 0.78rem; }
+.toc-item.level-h2:hover { padding-left: 34px; }
+.toc-item.level-h3:hover { padding-left: 48px; }
+
+@media (max-width: 960px) {
+  .toc-root { display: none; }
+}
